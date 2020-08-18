@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+   .header{
+          text-align: center;
+          font-size: 30px; 
+          background: #1abc9c;
+      }
+      .signform{
+         background-color: lightblue;
+          text-align: center;
+      }
+      .general{
+        background-color: #000080;
+          text-align: center;
+          color:white;
+          font-size:17px;
+      }
+      
+        .footer{
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: lightblue;
+          text-align: center;
+}
+  </style>
+</head>
+<body>
+ 
+<div class="header" style="margin-bottom:0">
+  <h1>STUDENT ENGAGEMENT SYSTEM</h1>
+  <p>Make the most out of your Student Life!</p> 
+</div> 
+
+
+ 
+ 
+<div class="signform">
+<form action="sign.html" method= "post" onsubmit="return" id="myform1">
+ <input type= "submit"><br>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" required><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" required><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+  <label for="lname">Password:</label><br>
+  <input type="password" id="pass" name="pass" required><br>
+</form>
+
+<div class="general">
+    <p>Reminder: mySES will be undergoing it's regular maintenance period on August 31. We sincerely apologize for any inconvenience this may cause you.</p>
+</div>
+
+<div class="footer" style="margin-bottom:0">
+  <p>Need Help? Contact us</p>
+  <p>contact@myses.com</p>
+</div>
+
+</div>
+</body>
+</html>

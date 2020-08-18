@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <script type="text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+   
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+   .header{
+          text-align: center;
+          background: #1abc9c;
+      }
+      
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+<div class="header">
+ <h1>STUDENT ENGAGEMENT SYSTEM</h1>
+  <p>Make the most out of your Student Life!</p> 
+ <h3>APPLICATIONS</h3>
+</div>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Students Offering Support</h2>
+        <p class="title">Volunteers needed</p>
+        <p>As a Tutor, you are responsible for teaching the course material covered in class 
+        to students attending your Exam AID review session.  You will be explaining the main 
+        concepts that will be tested on the upcoming exam and ensure students have thoroughly 
+        understood the content</p>
+        <p><button class="button"><a href="cancel.html">CANCEL MY APPLICATION</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Women in CyberSecurity</h2>
+        <p class="title">Chapter Members</p>
+        <p>WiCyS provides opportunities for women to learn and get hands on experience in cybersecurity. 
+      Our goal is to spread awareness about cybersecurity in Windsor-Essex. Join hands with us in creating a 
+      diverse cybersecurity workforce.</p>
+        <p><button class="button"><a href="cancel.html">CANCEL MY APPLICATION</a></button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>General Science Club</h2>
+        <p class="title">Executive Marketing VP</p>
+        <p>A club for all Science Students. You will be responsible for developing and implementing a 
+        cohesive marketing plan to increase the club awareness on campus. To excel in this position,
+        you must have great communication skills, the ability to think outside the box and a passion for marketing.</p>
+        <p><button class="button"><a href="cancel.html">CANCEL MY APPLICATION</a></button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
